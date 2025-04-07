@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Denis Mwanzia">
+    <meta name="description" content="Layout design using flexbox. Mobile first responsive design principle.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design using Flexbox</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">ByteWave</h1>
+        <nav class="menu-links">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <h2>Empowering Connectivity. Enabling Growth.</h2>
+            <p>
+                At ByteWave, we provide affordable, reliable, and efficient internet access for underserved
+                areas,enabling businesses and communities to thrive.
+            </p>
+            <a href="#contact">Get Started</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                ByteWave is a leading software company dedicated to providing seamless, high-speed internet connectivity
+                for underserved areas. Our mission is to bridge the digital divide and provide affordable internet
+                access to all.
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Affordable Internet Service</h3>
+                <p>
+                    Access high-speed internet at competitive prices with packages tailored to your needs.
+                </p>
+            </div>
+            <div class="service">
+                <h3>Network Optimization</h3>
+                <p>
+                    Maximize your network’s potential with our expert optimization services, ensuring fast, seamless
+                    connectivity.
+                </p>
+            </div>
+            <div class="service">
+                <h3>Tech Support and Consultation</h3>
+                <p>
+                    Our dedicated support team is ready to assist you with troubleshooting, consultations, and solutions
+                    to any connectivity
+                    issues.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>
+                We’d love to hear from you! Reach out to us through the form below or contact us directly at:
+            </p>
+            <p>
+                <a href="mailto:support@bytewave.com">support@bytewave.com</a>
+            </p>
+            <p>
+                <a href="tel:+254111344220">+254 111 344 220"</a>
+            </p>
+
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea row="5" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message"</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ByteWave. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms and Conditions</a>
+        </p>
+    </footer>
+</body>
+
+</html>
